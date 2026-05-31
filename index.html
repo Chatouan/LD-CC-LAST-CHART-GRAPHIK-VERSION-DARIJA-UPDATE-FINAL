@@ -521,6 +521,80 @@ select:focus{
   }
 }
 
+
+
+/* =========================================================
+   FINAL CTA COLOR UPDATE — soft light green, comfortable for B2B
+   Registration CTAs only: clear, premium, and consistent
+   ========================================================= */
+:root{
+  --cta-green:#BFF24A !important;
+  --cta-green-2:#A9E835 !important;
+  --cta-text:#0F4C75 !important;
+  --cta-shadow:0 16px 36px rgba(191,242,74,.24) !important;
+}
+
+.btn-primary,
+.nav .btn-primary,
+.hero-actions .btn-primary,
+.offer .btn-primary,
+.offer .btn-secondary,
+.mobile-cta .btn,
+.mobile-cta .btn-primary,
+.mobile-cta a{
+  background:linear-gradient(135deg,var(--cta-green),var(--cta-green-2)) !important;
+  color:var(--cta-text) !important;
+  border:1px solid rgba(15,76,117,.10) !important;
+  box-shadow:var(--cta-shadow) !important;
+  font-weight:800 !important;
+}
+
+.btn-primary:hover,
+.nav .btn-primary:hover,
+.hero-actions .btn-primary:hover,
+.offer .btn-primary:hover,
+.offer .btn-secondary:hover,
+.mobile-cta a:hover{
+  filter:brightness(1.03) !important;
+  transform:translateY(-2px) !important;
+  box-shadow:0 20px 42px rgba(191,242,74,.30) !important;
+}
+
+.btn-primary:active,
+.nav .btn-primary:active,
+.hero-actions .btn-primary:active,
+.offer .btn-primary:active,
+.offer .btn-secondary:active,
+.mobile-cta a:active{
+  transform:translateY(0) scale(.98) !important;
+}
+
+/* Keep secondary informational CTA as outline, not green */
+.btn-ghost,
+.hero-actions .btn-ghost,
+.hero-actions .btn-secondary{
+  background:rgba(255,255,255,.12) !important;
+  color:#ffffff !important;
+  border:1px solid rgba(255,255,255,.36) !important;
+  box-shadow:none !important;
+}
+
+.mobile-cta{
+  background:rgba(255,255,255,.94) !important;
+  border:1px solid rgba(224,224,224,.95) !important;
+  box-shadow:0 18px 45px rgba(15,76,117,.16) !important;
+}
+
+
+
+/* Countdown order fix: left = hours, center = minutes, right = seconds */
+.countdown{
+  direction:ltr !important;
+}
+.countdown .timebox{
+  direction:rtl !important;
+}
+
 </style>
 </head>
 <body>
