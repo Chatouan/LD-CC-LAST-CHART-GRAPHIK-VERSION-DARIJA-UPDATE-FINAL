@@ -48,7 +48,11 @@
     .video-caption span{color:rgba(255,255,255,.78);font-weight:700}
 
     .logos{overflow:hidden;border-radius:24px;border:1px solid var(--line);background:white;padding:18px;white-space:nowrap}.logos-track{display:inline-flex;gap:18px;animation:marquee 24s linear infinite}.logo-pill{direction:ltr;border:1px solid var(--line);border-radius:999px;padding:12px 22px;font-weight:900;color:var(--blue-900);background:#f9fcfd}@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(50%)}}
-    .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.quote{background:white;border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:0 18px 45px rgba(6,40,58,.08)}.stars{color:#f7b500;font-size:18px;letter-spacing:2px}.quote p{font-size:17px;font-weight:700}.person{display:flex;align-items:center;gap:12px;margin-top:18px}.person small{color:var(--muted);font-weight:700}.offer{position:relative;overflow:hidden;border-radius:36px;padding:50px;background:linear-gradient(135deg,var(--blue-900),var(--blue-800));color:white;box-shadow:var(--shadow)}.offer:before{content:"";position:absolute;inset:auto -80px -110px auto;width:360px;height:360px;border-radius:50%;background:rgba(204,250,4,.14)}.offer-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}.offer h2{font-size:clamp(34px,5vw,64px);line-height:1.05;margin:12px 0}.offer p{color:rgba(255,255,255,.84);font-size:18px}.countdown{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.timebox{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:20px;text-align:center}.timebox strong{font-size:34px;color:var(--green);display:block}.final-checks{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}.final-checks span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:9px 14px;font-weight:800}.footer{padding:34px 0 94px;text-align:center;color:var(--muted);font-weight:700}.mobile-cta{display:none;position:fixed;z-index:60;left:12px;right:12px;bottom:12px;background:var(--blue-900);border:1px solid rgba(255,255,255,.2);border-radius:22px;padding:10px;box-shadow:0 18px 45px rgba(0,0,0,.2)}.mobile-cta .btn{width:100%}
+    .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.quote{background:white;border:1px solid var(--line);border-radius:26px;padding:28px;box-shadow:0 18px 45px rgba(6,40,58,.08)}.stars{color:#f7b500;font-size:18px;letter-spacing:2px}.quote p{font-size:17px;font-weight:700}.person{display:flex;align-items:center;gap:12px;margin-top:18px}.person small{color:var(--muted);font-weight:700}.offer{position:relative;overflow:hidden;border-radius:36px;padding:50px;background:linear-gradient(135deg,var(--blue-900),var(--blue-800));color:white;box-shadow:var(--shadow)}.offer:before{content:"";position:absolute;inset:auto -80px -110px auto;width:360px;height:360px;border-radius:50%;background:rgba(204,250,4,.14)}.offer-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:center}.offer h2{font-size:clamp(34px,5vw,64px);line-height:1.05;margin:12px 0}.offer p{color:rgba(255,255,255,.84);font-size:18px}.countdown{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.timebox{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:20px;text-align:center}.timebox strong{font-size:34px;color:var(--green);display:block}.final-checks{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0}.final-checks span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:9px 14px;font-weight:800}.footer{padding:34px 0 94px;text-align:center;color:var(--muted);font-weight:700}
+    .footer-links{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+    .footer-links a{color:var(--blue-900);font-weight:800;text-decoration:none}
+    .footer-links a:hover{text-decoration:underline}
+    .footer-sep{color:var(--muted);opacity:.55}.mobile-cta{display:none;position:fixed;z-index:60;left:12px;right:12px;bottom:12px;background:var(--blue-900);border:1px solid rgba(255,255,255,.2);border-radius:22px;padding:10px;box-shadow:0 18px 45px rgba(0,0,0,.2)}.mobile-cta .btn{width:100%}
     @media(max-width:920px){.nav-links{display:none}.brand img{width:160px}.hero{padding-top:40px}.hero-grid,.problem-grid,.offer-grid{grid-template-columns:1fr}.stats-grid,.features,.steps,.testimonials{grid-template-columns:1fr 1fr}.hero-card{margin-top:22px}.section{padding:68px 0}.mobile-cta{display:block}.footer{padding-bottom:112px}}
     @media(max-width:620px){.container{width:min(100% - 24px,1180px)}.nav-inner{height:70px}.brand img{width:145px}.hero h1{font-size:39px}.hero-actions .btn{width:100%}.stats-grid,.features,.steps,.testimonials,.metric-grid{grid-template-columns:1fr}.countdown{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.timebox{padding:14px 6px;border-radius:16px}.timebox strong{font-size:27px}.timebox span{font-size:12px}.panel,.offer{padding:24px;border-radius:24px}.hero-card:after{font-size:26px;top:-22px}.tag{display:none}}
 
@@ -790,7 +794,16 @@ select:focus{
 <a class="btn btn-primary" href="https://coincarriere.com/register?type=company" target="_blank" onclick="fbq('track', 'Lead');">ابدأ مجاناً كفاءات فـ48 ساعة</a>  </div>
 
   <footer class="footer">
-    <div class="container">© 2026 CoinCarrière — منصة التوظيف الذكي في العقار</div>
+    <div class="container">
+      <nav class="footer-links" aria-label="روابط قانونية">
+        <a href="https://coincarriere.com/en/contact" target="_blank" rel="noopener noreferrer">اتصل بنا</a>
+        <span class="footer-sep">|</span>
+        <a href="https://coincarriere.com/en/privacy" target="_blank" rel="noopener noreferrer">سياسة الخصوصية</a>
+        <span class="footer-sep">|</span>
+        <a href="https://coincarriere.com/en/terms" target="_blank" rel="noopener noreferrer">الشروط والأحكام</a>
+      </nav>
+      <div>© 2026 CoinCarrière — منصة التوظيف الذكي في العقار</div>
+    </div>
   </footer>
 
   <script>
